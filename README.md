@@ -1,4 +1,4 @@
-# Leetcode solutions
+# LeetCode
 
 | Problem                                                                                                                           | Solution                                                          |
 | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
@@ -8,3 +8,5 @@
 | [29. Divide Two Integers](https://leetcode.com/problems/divide-two-integers)                                                      | [div.go](./divide-two-integers/div.go)                            |
 | [177. Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary)                                                       | [nth.sql](./nth-highest-salary/nth.sql)                           |
 | [1934. Confirmation Rate](https://leetcode.com/problems/confirmation-rate)                                                        | [rate.sql](./confirmation-rate/rate.sql)                          |
+| [192. Word Frequency](https://leetcode.com/problems/word-frequency)                                                               | [freq.sh](./word-frequency/freq.sh)                               |
+| [194. Transpose File](https://leetcode.com/problems/transpose-file)                                                               | [trans.sh](./transpose-file/trans.sh)                             |
