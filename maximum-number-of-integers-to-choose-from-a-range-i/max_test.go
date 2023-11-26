@@ -14,10 +14,11 @@ var tests = []struct {
 	{"test 3", []int{11}, 7, 50, 7},
 }
 
-func Test_maxCount(t *testing.T) {
+func TestMaxCount(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := maxCount(tt.banned, tt.n, tt.maxSum); got != tt.want {
+			got := maxCount(tt.banned, tt.n, tt.maxSum)
+			if got != tt.want {
 				t.Errorf("maxCount() = %v, want %v", got, tt.want)
 			}
 		})

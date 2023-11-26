@@ -1,7 +1,7 @@
 package main
 
 import (
-	"reflect"
+	"slices"
 	"testing"
 )
 
@@ -14,10 +14,11 @@ var tests = []struct {
 	{"test 2", []int{1, 4, 6, 8, 10}, []int{24, 15, 13, 15, 21}},
 }
 
-func Test_getSumAbsoluteDifferences(t *testing.T) {
+func TestGetSumAbsoluteDifferences(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := getSumAbsoluteDifferences(tt.nums); !reflect.DeepEqual(got, tt.want) {
+			got := getSumAbsoluteDifferences(tt.nums)
+			if !slices.Equal(got, tt.want) {
 				t.Errorf("getSumAbsoluteDifferences() = %v, want %v", got, tt.want)
 			}
 		})

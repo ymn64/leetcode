@@ -19,7 +19,8 @@ var tests = []struct {
 func TestAddTwoNumbers(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := addTwoNumbers(tt.l1, tt.l2); !reflect.DeepEqual(got, tt.want) {
+			got := addTwoNumbers(tt.l1, tt.l2)
+			if !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("addTwoNumbers() = %v, want %v", got, tt.want)
 			}
 		})

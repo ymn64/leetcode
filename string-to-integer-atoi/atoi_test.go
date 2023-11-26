@@ -22,7 +22,8 @@ var tests = []struct {
 func TestMyAtoi(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := myAtoi(tt.s); got != tt.want {
+			got := myAtoi(tt.s)
+			if got != tt.want {
 				t.Errorf("myAtoi() = %v, want %v", got, tt.want)
 			}
 		})

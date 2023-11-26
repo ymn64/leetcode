@@ -13,3 +13,6 @@
 | [1685. Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array)             | [sum.go](./sum-of-absolute-differences-in-a-sorted-array/sum.go)       |
 | [2627. Debounce](https://leetcode.com/problems/debounce)                                                                                       | [debounce.js](./debounce/debounce.js)                                  |
 | [2554. Maximum Number of Integers to Choose From a Range I](https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-i) | [max.go](./maximum-number-of-integers-to-choose-from-a-range-i/max.go) |
+| [1727. Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements)                             | [area.go](./largest-submatrix-with-rearrangements/area.go)             |
+| [189. Rotate Array](https://leetcode.com/problems/rotate-array)                                                                                | [rotate.go](./rotate-array/rotate.go)                                  |
+| [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)                                                | [prods.go](./product-of-array-except-self/prods.go)                    |

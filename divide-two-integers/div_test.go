@@ -15,10 +15,11 @@ var tests = []struct {
 	{"test 5", -2147483648, 1, -2147483648},
 }
 
-func Test_divide(t *testing.T) {
+func TestDivide(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := divide(tt.dividend, tt.divisor); got != tt.want {
+			got := divide(tt.dividend, tt.divisor)
+			if got != tt.want {
 				t.Errorf("divide() = %v, want %v", got, tt.want)
 			}
 		})
