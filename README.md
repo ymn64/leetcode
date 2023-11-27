@@ -16,3 +16,6 @@
 | [1727. Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements)                             | [area.go](./largest-submatrix-with-rearrangements/area.go)             |
 | [189. Rotate Array](https://leetcode.com/problems/rotate-array)                                                                                | [rotate.go](./rotate-array/rotate.go)                                  |
 | [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)                                                | [prods.go](./product-of-array-except-self/prods.go)                    |
+| [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman)                                                                         | [roman.go](./integer-to-roman/roman.go                                 |
+| [273. Integer to English Words](https://leetcode.com/problems/integer-to-english-words)                                                        | [words.go](./integer-to-english-words/words.go)                        |
+| [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)                                                      | [reverse.go](./reverse-words-in-a-string/reverse.go)                   |
