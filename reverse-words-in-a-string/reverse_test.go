@@ -12,7 +12,7 @@ var tests = []struct {
 	{"test 3", "a good   example", "example good a"},
 }
 
-func Test_reverseWords(t *testing.T) {
+func TestReverseWords(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			got := reverseWords(tt.s)
