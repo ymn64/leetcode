@@ -28,3 +28,6 @@
 | [2721. Execute Asynchronous Functions in Parallel](https://leetcode.com/problems/execute-asynchronous-functions-in-parallel)                   | [promiseall.js](./execute-asynchronous-functions-in-parallel/promiseall.js) |
 | [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)                             | [remove.go](./remove-duplicates-from-sorted-array-ii/remove.go)             |
 | [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)                                    | [profit.go](./best-time-to-buy-and-sell-stock-ii/profit.go)                 |
+| [570. Managers with at Least 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports)                          | [managers.sql](./managers-with-at-least-5-direct-reports/manager.sql)       |
+| [1193. Monthly Transactions I](https://leetcode.com/problems/monthly-transactions-i)                                                           | [monthly.sql](./monthly-transactions-i/monthly.sql)                         |
+| [1045. Customers Who Bought All Products](https://leetcode.com/problems/customers-who-bought-all-products)                                     | [customers.sql](./customers-who-bought-all-products/customers.sql)          |
