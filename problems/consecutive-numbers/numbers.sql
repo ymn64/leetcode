@@ -1,21 +1,30 @@
+-- Schema
+CREATE TABLE IF NOT EXISTS Logs (
+  id INT,
+  num INT
+);
+
+TRUNCATE TABLE Logs;
+
+INSERT INTO Logs (id, num)
+  VALUES ('1', '1'),
+  ('2', '1'),
+  ('3', '1'),
+  ('4', '2'),
+  ('5', '1'),
+  ('6', '2'),
+  ('7', '2');
+
 -- Using LAG
 SELECT DISTINCT
   num AS ConsecutiveNums
-FROM
-  (
-    SELECT
-      num,
-      LAG(num, 1) OVER (
-        ORDER BY
-          id
-      ) AS prev,
-      LAG(num, 2) OVER (
-        ORDER BY
-          id
-      ) AS prevprev
-    FROM
-      Logs
-  ) AS sub
+FROM (
+  SELECT
+    num,
+    LAG(num, 1) OVER (ORDER BY id) AS prev,
+    LAG(num, 2) OVER (ORDER BY id) AS prevprev
+  FROM
+    Logs) AS sub
 WHERE
   num = prev
   AND num = prevprev;
@@ -30,3 +39,4 @@ FROM
 WHERE
   l1.num = l2.num
   AND l1.num = l3.num;
+

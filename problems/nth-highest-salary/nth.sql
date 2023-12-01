@@ -1,19 +1,28 @@
-CREATE FUNCTION getNthHighestSalary (N INT) RETURNS INT READS SQL DATA BEGIN DECLARE result INT;
+-- Schema
+CREATE TABLE IF NOT EXISTS Employee (
+  Id INT,
+  Salary INT
+);
 
-SET
-  N = N - 1;
+TRUNCATE TABLE Employee;
 
-SELECT DISTINCT
-  salary INTO result
-FROM
-  Employee
-ORDER BY
-  salary DESC
-LIMIT
-  1
-OFFSET
-  N;
+INSERT INTO Employee (id, salary)
+  VALUES ('1', '100'),
+  ('2', '200'),
+  ('3', '300');
 
-RETURN result;
-
+CREATE FUNCTION getNthHighestSalary (N INT)
+  RETURNS INT READS SQL DATA
+BEGIN
+DECLARE
+  result INT;
+  SET N = N - 1;
+  SELECT DISTINCT
+    salary INTO result
+  FROM
+    Employee
+  ORDER BY
+    salary DESC
+  LIMIT 1 OFFSET N;
+  RETURN result;
 END;
